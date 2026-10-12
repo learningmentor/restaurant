@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rustic Table | Fine Dining</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">The Rustic Table</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience Culinary Excellence</h1>
+            <p>Locally sourced ingredients, crafted with passion.</p>
+            <a href="#menu" class="btn">View Our Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Signature Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Truffle Risotto</h3>
+                    <p>Wild mushrooms, arborio rice, parmesan crisp, white truffle oil.</p>
+                </div>
+                <span class="price">$24</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Pan-Seared Scallops</h3>
+                    <p>Cauliflower purée, crispy pancetta, micro-greens.</p>
+                </div>
+                <span class="price">$32</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Herb-Crusted Lamb Rack</h3>
+                    <p>Rosemary reduction, roasted root vegetables, garlic mash.</p>
+                </div>
+                <span class="price">$45</span>
+            </div>
+            <div class="menu-item">
+                <div class="menu-item-info">
+                    <h3>Vanilla Bean Panna Cotta</h3>
+                    <p>Mixed berry compote, almond biscotti.</p>
+                </div>
+                <span class="price">$12</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservations" class="reservation-section">
+        <h2>Book a Table</h2>
+        <form id="reservation-form" class="reservation-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" required placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" min="1" max="12" required placeholder="2">
+            </div>
+            <button type="submit" class="btn btn-submit">Confirm Reservation</button>
+        </form>
+        <div id="form-message" class="hidden"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 The Rustic Table. All rights reserved.</p>
+        <p>123 Culinary Lane, Food City, FC 90210</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
